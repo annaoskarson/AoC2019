@@ -104,7 +104,7 @@ startlist = startlist + zeros
 
 def bothparts(inputval):
     print("Advent of Code, day 9, part", inputval)
-    (count, inlist, outlist, code, jox) = compute(0, [inputval], startlist)
+    (count, inlist, [outlist], code, jox) = compute(0, [inputval], startlist)
     print(outlist)
 
 bothparts(1)

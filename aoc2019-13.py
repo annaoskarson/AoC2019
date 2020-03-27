@@ -1,4 +1,3 @@
-
 def compute(i, inlist, codelist):
     done99 = False
     outlist = []
@@ -130,8 +129,8 @@ while not done:
         inlist = inlist + [1]
     else:
         inlist = inlist + [0]
-    print(score)
+#    print(score)
 
-print("part 1:", countblocks)
-print("part 2:", score)
+print("Part one:", countblocks)
+print("Part two:", score)
 

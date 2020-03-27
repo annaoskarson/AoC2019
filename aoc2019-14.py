@@ -1,6 +1,6 @@
 import math
 def initiera():
-    fil = open('14-input.txt', 'r')
+    fil = open('aoc2019-14-input.txt', 'r')
     lines = fil.read().split('\n')[:-1]
 
     skafferi = {}
@@ -51,14 +51,14 @@ guess = 1
 numbers = 1
 laga_mat('FUEL', guess)
 ores = abs(skafferi['ORE'])
-print(numbers, ":", guess, "FUEL av antal ORES:", ores)
+print('Part one:', ores)
 while ores < 1000000000000:
     numbers = numbers + 1
     guess = math.ceil(guess + ((1000000000000 - ores) * (guess/ores))-(ores/1000000000000)+1)
     skafferi, recept = initiera()
     laga_mat('FUEL', guess)
     ores = abs(skafferi['ORE'])
-    print(numbers, ":", guess, "FUEL av antal ORES:", ores)
-print("svar:", guess-1)
+#    print(numbers, ":", guess, "FUEL av antal ORES:", ores)
+print("Part two:", guess-1)
 
 
